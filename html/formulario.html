@@ -11,7 +11,7 @@
 
     <form target="_parent"> <!-- target="_blank"-->
         <label>Nombre: </label>
-        <input type="text" name="nombre" >
+        <input type="text" name="nombre" placeholder="Introduce texto">
         <br><br>
 
         <label>Contraseña: </label>
@@ -23,7 +23,7 @@
 
         <br><br>
         <label>Numero a elegir: </label>
-        <input type="number" name="numero" >
+        <input type="number" name="numero" value="1">
 
         <br><br>
         <label>Fecha: </label>
@@ -32,7 +32,7 @@
 
         <!--Radio Button-->
         <label>Elige la salsa: </label>
-        <input type="radio" name="salsa" value="ketchup">Ketchup
+        <input type="radio" name="salsa" value="ketchup">Ketchup</input>
         <input type="radio" name="salsa" value="mayonesa">Mayonesa
         <input type="radio" name="salsa" value="mostaza">Mostaza
         <br><br>
@@ -53,6 +53,25 @@
         <input type="checkbox" name="postre" value="postre">Postre
         <br>
         <input type="checkbox" name="cafe" value="cafe">Cafe
+
+        <br><br>
+
+        <select name="comida">
+            <option value="hamburguesa">Hamburguesa</option>
+            <option value="pizza">Pizza</option>
+            <option value="sushi">Sushi</option>
+        </select>
+
+        <br><br>
+
+        <input title="boton dinero" type="button" value="Clica para reclamar premio" onclick="alert('Has ganado mil euros')" >
+
+
+        <br><br>
+
+        <textarea name="comentario" rows="20" cols="30"
+         placeholder="Escribe tu comentario"></textarea>
+
 
         <br><br>
         <input type="submit" value="Enviar">
