@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            color: purple
+        }
+
+        h1, h2{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+        }
+
+        /*Mas especifico que h2, por lo tanto tiene mayor jerarquia*/
+        #delfin{
+            font-size: 35px;
+        }
+
+        /*Primer nivel de jerarquia: toma el ultimo valor*/
+        h2{
+            font-size: 20px;
+        }
+
+        
+
+        /* Para acceder a id*/
+        #orni{
+            background-color: turquoise;
+        }
+
+        /* Para acceder a class*/
+        .terrestre{
+            background-color: yellowgreen;
+        }
+
+        #marinos{
+            background-color: rgb(107, 107, 255);
+            border: 4px solid red;
+        }
+
+        body{
+            background-color: lightslategrey;
+        }
+    </style>
+
+</head>
+<body></body>
+    
+    <h1>Animales marinos</h1>
+    <div id="marinos">
+        <h2>Ballena</h2>
+        <h2 id="delfin">Delfin</h2>
+        <h2>Tiburon</h2>
+    </div>
+    
+
+    <h1>Animales terrestres</h1>
+    <h2 class="terrestre">Leon</h2>
+    <h2 class="terrestre">Tigre</h2>
+    <h2 class="terrestre">Elefante</h2>
+    
+    <h1>Animales de rio</h1>
+    <h2>Nutria</h2>
+    <h2>Castor</h2>
+    <h2 id="orni">Ornitorrinco</h2>
+
+</body>
+</html>
