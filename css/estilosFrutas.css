@@ -1,0 +1,40 @@
+p{
+    font-weight: bold;
+}
+
+body{
+    text-align: center;
+}
+
+#frutas-favoritas{
+    border: 2px solid green;
+    font-size: 50px;
+    height: 800px;
+}
+
+#kiwi{
+    width: 200px;
+    height: 180px;
+}
+
+#mango-container{
+    font-size: 2em;
+}
+
+#mango{
+    width: 50vw;
+    height: 2em;
+    /* 
+    height: 2em; Tendria 200px (es acumulado del contenedor)
+    */
+}
+
+#platano{
+    width: 50vw;
+    height: 25%;
+}
+
+#pina{
+    width: 50vw;
+    height: 40%;
+}
