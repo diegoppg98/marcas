@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejer2</title>
+
+    <style>
+        .rojo{
+            color: red;
+        }
+        .verde{
+            color: green;
+        }
+        .azul{
+            color: blue;
+        }
+
+        li.rojo{
+           font-family: fantasy;
+           list-style-type: square;
+        }
+
+        ol{
+            list-style-type: upper-roman;
+        }
+
+        li.rojo::marker{
+            color: yellow;
+        }
+       
+    </style>
 </head>
 <body>
-    
+    <h1>CSS 2</h1>
+    <p>Los colores del pixel son: <span class="rojo">rojo</span>, <span class="verde">verde</span> y <span class="azul">azul</span>
+        (<span class="rojo">red</span>, <span class="verde">green</span> and <span class="azul">blue</span>)</p>
+
+    <ul>
+        <li class="rojo">Rojo</li>
+        <li class="verde">Verde</li>
+        <li class="azul">Azul</li>
+    </ul>
+
+    <ol>
+        <li>Magenta</li>
+        <li>Cyan</li>
+        <li>Amarillo</li>
+    </ol>
 </body>
 </html>
