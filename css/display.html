@@ -29,10 +29,39 @@
             background-color: aquamarine;
             width: 100px;
         }
+
+        .inline-block{
+            display: inline-block;
+            background-color: rgb(255, 255, 128);
+            width: 200px;
+        }
+
+        .flex-container{
+            display: flex;
+           /* flex-wrap: wrap; */
+           /* flex-direction: column; */
+        }
+
+        .grid-container{
+            display: grid;
+           /* grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .none{
+            display: none;
+        }
+        
+        .hidden{
+            visibility: hidden;
+        }
     </style>
 </head>
 <body>
 
+
+    <div class="caja none">NONE</div>
+    <div class="caja hidden">HIDDEN</div>
 
     <!-- Display BLOCK -->    
     <h1>Display block</h1>
@@ -44,6 +73,32 @@
     <h1>Display inline</h1>
     <span class="caja inline">INLINE</span>
     <span class="caja inline">INLINE</span>
+    
+    <!-- Display INLINE BLOCK -->
+    <h1>Display inline-block</h1>
+    <span class="caja inline-block">INLINE BLOCK</span>
+    <span class="caja inline-block">INLINE BLOCK</span>
+
+    <!-- Display Flex  -->
+    <h1>Display flex</h1>
+    <div class="flex-container">
+        <div class="caja">FLEX 1111111111</div>
+        <div class="caja">FLEX 222222222</div>
+        <div class="caja">FLEX 333333333333333333333333</div>
+        <div class="caja">FLEX 4444444444444</div>
+        <div class="caja">FLEX 5</div>
+    </div>
+
+
+    <!-- Display Grid  -->
+    <h1>Display Grid</h1>
+    <div class="grid-container">
+        <div class="caja">GRID 1111111111</div>
+        <div class="caja">GRID 222222222</div>
+        <div class="caja">GRID 333333333333333333333333</div>
+        <div class="caja">GRID 4444444444444</div>
+        <div class="caja">GRID 5</div>
+    </div>
     
 </body>
 </html>
